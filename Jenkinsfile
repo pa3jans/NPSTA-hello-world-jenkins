@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'build success'
-                echo 'node -v'
+                sh 'node -v'
             }
         }
         stage('Test') {
